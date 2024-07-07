@@ -4,7 +4,7 @@ services:
     build: ./src
     volumes:
       - ./src:/src
-    net: "host" # so that the python script can POST data to localhost on host machine
+    networks: "host" # so that the python script can POST data to localhost on host machine
 
   redis:
     image: redis
