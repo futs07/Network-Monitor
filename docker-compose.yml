@@ -1,4 +1,4 @@
-volume: '3.8'
+volume: "2"
 services:
   script:
     build: ./src
