@@ -6,7 +6,7 @@ services:
     volumes:
       - ./src:/src
     networks:
-      - "host" # so that the python script can POST data to localhost on host machine
+      - "bridge" # so that the python script can POST data to localhost on host machine
 
   redis:
     image: redis
