@@ -1,4 +1,5 @@
 volume: "2"
+
 services:
   script:
     build: ./src
@@ -10,11 +11,11 @@ services:
   redis:
     image: redis
     ports:
-        - "6379"
+      - "6379"
 
   mynodeapp:
-      build: ./node_app
-      ports:
-          - "3000:3000"
-      links:
-        - redis
+    build: ./node_app
+    ports:
+      - "3000:3000"
+    links:
+      - redis
